@@ -1,10 +1,12 @@
 import streamlit as st
 from prediction_helper import predict  # Ensure this is correctly linked to your prediction_helper.py
 
-# Set the page configuration and title
+# Set page configuration
 st.set_page_config(page_title="RiskRadar: Credit Risk Model", page_icon="📊")
-st.title("RiskRadar:")
-st.markdown("<h1 style='text-align: left; font-size: 25px; font-weight: bold;'> Your Compass For Smarter Lending Decsions. </h1>", unsafe_allow_html=True)
+
+# App content
+st.title("💳 RiskRadar")
+st.markdown("<h1 style='text-align: left; font-size: 25px; font-weight: bold;'>Your Compass for Smarter Lending Decisions.</h1>", unsafe_allow_html=True)
 
 # Create rows of three columns each
 row1 = st.columns(3)
@@ -39,7 +41,6 @@ with row3[1]:
 with row3[2]:
     num_open_accounts = st.number_input('Open Loan Accounts', min_value=1, max_value=4, step=1, value=2)
 
-
 with row4[0]:
     residence_type = st.selectbox('Residence Type', ['Owned', 'Rented', 'Mortgage'])
 with row4[1]:
@@ -63,6 +64,62 @@ if st.button('Calculate Risk'):
     st.write(f"Credit Score: {credit_score}")
     st.write(f"Rating: {rating}")
 
+
+# Hamburger Icon
+st.markdown("""
+<style>
+/* Target the header button using its data-testid */
+[data-testid="baseButton-headerNoPadding"] {
+    background: none; /* Remove default background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Replace the SVG with a hamburger icon */
+[data-testid="baseButton-headerNoPadding"] svg {
+    display: none; /* Hide the default SVG */
+}
+
+[data-testid="baseButton-headerNoPadding"]::before {
+    content: '\\2630'; /* Unicode for hamburger icon */
+    font-size: 24px; /* Adjust icon size */
+    color: currentColor; /* Inherit color for consistency */
+    display: block;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
 # Footer
-# st.markdown('_Project From Codebasics ML Course_')
+st.markdown("---")
+st.markdown("""
+<div style='text-align: center;'>
+    <h4>A Project by ~ Adin Raja ✌️</h4>
+    <p>
+        <a href='https://github.com/adin11' target='_blank'>GitHub</a> | 
+        <a href='https://www.linkedin.com/in/adin-raja-492a78194/' target='_blank'>LinkedIn</a> | 
+        <a href='mailto:adinraja78@gmail.com'>Email</a>
+    </p>
+    <small>© 2024 Adin Raja. All rights reserved.</small>
+</div>
+""", unsafe_allow_html=True)
+
+# Optional Sidebar for About Section
+with st.sidebar:
+    
+    with st.sidebar:
+     st.markdown("### About This App") 
+
+    st.info(
+        """
+        This is a robust credit risk scoring system for financial institution, mimicking a CIBIL-like credit scorecard. The system classifies applicants into risk bands – Poor, Average, Good, and Excellent – empowering smarter lending decisions and minimizing default risk \n
+        **Made by ~ Adin Raja**
+        """
+    )
+    st.markdown("### 📬 Contact") 
+    st.write("""
+    - ✉️ Email: [adinraja78@gmail.com](mailto:your_email@example.com)
+    - 💼 [LinkedIn](https://www.linkedin.com/in/adin-raja-492a78194/)
+    - 🖥️ [GitHub](https://github.com/adin11)
+    """)
 
