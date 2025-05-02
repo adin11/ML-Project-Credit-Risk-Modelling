@@ -1,6 +1,6 @@
 # Credit Risk Modelling:
 
-![banner](assets/credit.png)  
+![banner](assets/credit1.png)  
 Banner [source](https://banner.godori.dev/)
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.10%2B-lightgrey)
