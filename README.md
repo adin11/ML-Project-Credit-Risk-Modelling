@@ -2,17 +2,18 @@
 Banner [source](https://banner.godori.dev/)
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.10%2B-lightgrey)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/credit-risk-modelling)
+![GitHub last commit](https://img.shields.io/github/last-commit/adin11/ML-Project-Credit-Risk-Modelling)
 ![Type of ML](https://img.shields.io/badge/Type%20of%20ML-Classification-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![FastAPI App](https://img.shields.io/badge/Deployed%20with-FastAPI-red)]()
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 # 💳 Credit Risk Modelling
-**App Link:** [RiskRadar - Live Credit Scoring Engine](https://your-streamlit-app-link)
+
+***App Link:** [RiskRadar - Live Credit Scoring Engine](https://your-streamlit-app-link)
 ---
 
-# Overview:
+## Overview:
 A powerful, production-ready Credit Risk Scoring System built for financial institutions. Mimicking a CIBIL-like credit scorecard. It classifies applicants into different risk bands using financial and behavioral indicators. Designed to support smarter, faster lending decisions while reducing default risk, this real-time system is fair, scalable, and data-driven.
 
 ---
