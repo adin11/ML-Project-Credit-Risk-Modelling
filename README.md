@@ -22,8 +22,32 @@ Loan default is a critical challenge for lending institutions. This app predicts
 
 ---
 
+## Key Insights:
+
+### 1. Age Column
+![Group by Operation](assets/age.png)
+![Kde Plot](assets/age1.png)
+
+### 2.KDE Plots:
+![Loan Months](assets/loan_months.png)
+
+![Days Past Due](assets/dpd.png)
+
+![Credit Utlization ratio](assets/ratio.png)
+
+![Loan to Income Ratio](assets/LTI.png)
+
+### 3. Roc, Auc Curve:
+![Roc auc curve](assets/roc.png)
+
+### 4. Feature Importances:
+![Feature Importance](assets/fc.png)
+
+--- 
+
 ## ⚙️ Tech Stack:
 - Python (3.10+)
+- Pandas, Numpy, Matplotlib, Seaborn
 - FastAPI (for scoring backend)
 - Streamlit (UI for predictions)
 - Optuna (Hyperparameter tuning)
