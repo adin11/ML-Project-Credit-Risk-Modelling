@@ -26,7 +26,7 @@ Loan default is a critical challenge for lending institutions. This app predicts
 
 ### 1. Age Column
 ![Group by Operation](assets/age.png)
-![Kde Plot](assets/age1.png)
+![Kde Plot](assets/hue.png)
 
 ### 2.KDE Plots:
 ![Loan Months](assets/loan_months.png)
@@ -35,7 +35,7 @@ Loan default is a critical challenge for lending institutions. This app predicts
 
 ![Credit Utlization ratio](assets/ratio.png)
 
-![Loan to Income Ratio](assets/LTI.png)
+![Loan to Income Ratio](assets/lti.png)
 
 ### 3. Roc, Auc Curve:
 ![Roc auc curve](assets/roc.png)
