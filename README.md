@@ -30,7 +30,7 @@ Loan default is a critical challenge for lending institutions. This app predicts
 ![Group by Operation](assets/age.png)
 ![Kde Plot](assets/hue.png)
 
-**Average age in the default group is little less (37.12) than the average (39.7) of the group that did not default**
+**Average age in the default group is little less (37.12) than the average (39.7) of the group that did not default,**
 **Orange (defaulted) group is slightly shifted to left indicating that younger folks are more likely to default on their loanst**
 
 
