@@ -35,7 +35,7 @@ Loan default is a critical challenge for lending institutions. This app predicts
 
 ![Credit Utlization ratio](assets/ratio.png)
 
-![Loan to Income Ratio](assets/lti.png)
+![Loan to Income Ratio](assets/LTI.png)
 
 ### 3. Roc, Auc Curve:
 ![Roc auc curve](assets/roc.png)
