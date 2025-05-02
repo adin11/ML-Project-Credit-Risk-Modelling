@@ -18,7 +18,7 @@ A powerful, production-ready Credit Risk Scoring System built for financial inst
 ---
 
 ## 🔍 Business Problem:
-Loan default is a critical challenge for lending institutions. This app predicts an applicant’s credit risk by classifying them into bands like *Poor*, *Average*, *Good*, and *Excellent*, helping institutions take smarter lending decisions.
+Loan default is a critical challenge for lending institutions. This app predicts an applicant’s credit risk by classifying them into bands like *Poor*, *Average*, *Good*, and *Excellent*, Empowering institutions with smarter lending decisions.
 
 ---
 
