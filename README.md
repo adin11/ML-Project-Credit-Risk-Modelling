@@ -1,5 +1,3 @@
-# Credit Risk Modelling:
-
 ![banner](assets/credit1.png)  
 Banner [source](https://banner.godori.dev/)
 
@@ -14,12 +12,17 @@ Banner [source](https://banner.godori.dev/)
 **App Link:** [RiskRadar - Live Credit Scoring Engine](https://your-streamlit-app-link)
 ---
 
-## 🔍 Business Problem
+# Overview:
+A powerful, production-ready Credit Risk Scoring System built for financial institutions. Mimicking a CIBIL-like credit scorecard. It classifies applicants into different risk bands using financial and behavioral indicators. Designed to support smarter, faster lending decisions while reducing default risk, this real-time system is fair, scalable, and data-driven.
+
+---
+
+## 🔍 Business Problem:
 Loan default is a critical challenge for lending institutions. This app predicts an applicant’s credit risk by classifying them into bands like *Poor*, *Average*, *Good*, and *Excellent*, helping institutions take smarter lending decisions.
 
 ---
 
-## ⚙️ Tech Stack
+## ⚙️ Tech Stack:
 - Python (3.10+)
 - FastAPI (for scoring backend)
 - Streamlit (UI for predictions)
@@ -28,7 +31,7 @@ Loan default is a critical challenge for lending institutions. This app predicts
 
 ---
 
-## 🧪 Methods
+## 🧪 Methods:
 
 ### 📥 Data Preprocessing
 - Prevented data leakage by separating features (`X`) and target (`y`) early.
