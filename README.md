@@ -28,6 +28,10 @@ Loan default is a critical challenge for lending institutions. This app predicts
 ![Group by Operation](assets/age.png)
 ![Kde Plot](assets/hue.png)
 
+**Average age in the default group is little less (37.12) than the average (39.7) of the group that did not default**
+**Orange (defaulted) group is slightly shifted to left indicating that younger folks are more likely to default on their loanst**
+
+
 ### 2.KDE Plots:
 ![Loan Months](assets/loan_months.png)
 
@@ -37,13 +41,18 @@ Loan default is a critical challenge for lending institutions. This app predicts
 
 ![Loan to Income Ratio](assets/LTI.png)
 
+**In columns: loan_tenure_months, delinquent_months, total_dpd, credit_utilization, higher values indicate high likelyhood of becoming a default. Hence these 4 looks like strong predictors**
+
 ### 3. Roc, Auc Curve:
 ![Roc auc curve](assets/roc.png)
+**False positive rate vs True positive rate, Area under the curve = 0.98**
 
 ### 4. Feature Importances:
 ![Feature Importance](assets/fc.png)
+**All the three ratios indicate as Important feature for the model**
 
 --- 
+
 
 ## ⚙️ Tech Stack:
 - Python (3.10+)
