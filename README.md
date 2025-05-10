@@ -14,41 +14,60 @@ Banner [source](https://banner.godori.dev/)
 
 ---
 
+## 🔍 Business Problem:
+Money Lending instituitions often struggle to identify which applicants might default on loans. This leads to financial losses and operational risks. The goal is to build a solution that accurately classifies applicants based on their creditworthiness, making the loan approval process more efficient and secure.
+
+---
+
 ## Overview:
 A powerful, production-ready Credit Risk Scoring System built for financial institutions. Mimicking a CIBIL-like credit scorecard. It classifies applicants into different risk bands using financial and behavioral indicators. Designed to support smarter, faster lending decisions while reducing default risk, this real-time system is fair, scalable, and data-driven.
 
 ---
 
-## 🔍 Business Problem:
-Loan default is a critical challenge for lending institutions. This app predicts an applicant’s credit risk by classifying them into bands like *Poor*, *Average*, *Good*, and *Excellent*, Empowering institutions with smarter lending decisions.
-
----
-
 ## Key Insights:
 
-### 1. Age Column
-![Kde Plot](assets/hue.png)
+### 1. Default % By Age Bins:
+![Kde Plot](assets/age.png)
 
-**Average age in the default group is little less (37.12) than the average (39.7) of the group that did not default,**
-**Orange (defaulted) group is slightly shifted to left indicating that younger folks are more likely to default on their loanst**
+** **
+
+### 2. Fraud % Per City:
+![Loan Months](assets/city.png)
 
 
-### 2.KDE Plots:
-![Loan Months](assets/loan_months.png)
+** **
 
-![Days Past Due](assets/dpd.png)
+### 3. Fraud % Per City:
+![Loan Months](assets/city.png)
 
-![Credit Utlization ratio](assets/ratio.png)
 
-![Loan to Income Ratio](assets/LTI.png)
+** **
 
-**In columns: loan_tenure_months, delinquent_months, total_dpd, credit_utilization, higher values indicate high likelyhood of becoming a default. Hence these 4 looks like strong predictors**
 
-### 3. Roc, Auc Curve:
+### 4. Fraud % Per Loan Purpose:
+![Loan Months](assets/loan_purpose.png)
+
+
+** **
+
+
+### 5. Relationship between credit utilization ratio and DPD affecting Default:
+![Loan Months](assets/credit_util.png)
+
+
+** **
+
+### 6. Default % by residency type and employment status:
+![Loan Months](assets/residency.png)
+
+
+** **
+
+### 7. Roc, Auc Curve:
 ![Roc auc curve](assets/roc.png)
 **False positive rate vs True positive rate, Area under the curve = 0.98**
 
-### 4. Feature Importances:
+### 8. Feature Importances:
 ![Feature Importance](assets/fc.png)
 **All the three ratios indicate as Important feature for the model**
 
@@ -59,9 +78,10 @@ Loan default is a critical challenge for lending institutions. This app predicts
 - Python (3.10+)
 - Pandas, Numpy, Matplotlib, Seaborn
 - FastAPI (for scoring backend)
-- Streamlit (UI for predictions)
+- Streamlit (UI)
 - Optuna (Hyperparameter tuning)
 - SMOTE-Tomek (Class imbalance handling)
+- Render (deployment)
 
 ---
 
