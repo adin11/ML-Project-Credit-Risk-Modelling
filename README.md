@@ -11,6 +11,8 @@ Banner [source](https://banner.godori.dev/)
 # 💳 Credit Risk Modelling
 
 ##### App Link: [RiskRadar - Live Credit Scoring Engine](https://riskradar.onrender.com)
+##### Dashboard Link: [Power BI Dashboard](https://app.powerbi.onrender.com)
+
 
 ---
 
