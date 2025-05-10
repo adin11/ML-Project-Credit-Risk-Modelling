@@ -1,7 +1,7 @@
 ![banner](assets/banner.png)  
 Banner [source](https://banner.godori.dev/)
 
-![Python version](https://img.shields.io/badge/Python%20version-3.10%2B-lightgrey)
+![Python version](https://img.shields.io/badge/Python%20version-3.10%2B-grey)
 ![GitHub last commit](https://img.shields.io/github/last-commit/adin11/ML-Project-Credit-Risk-Modelling)
 ![Type of ML](https://img.shields.io/badge/Type%20of%20ML-Classification-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -129,10 +129,11 @@ A powerful, production-ready Credit Risk Scoring System built for financial inst
 
 ---
 
-## 📌 Key Findings:
-- Features like `Loan-to-Income Ratio` and `Delinquency Ratios` are strong predictors.
-- High recall in default class improves proactive risk control.
-- Risk band classification helps in better credit policy alignment.
+## 📌 Top Conclusions:
+
+- Factors like Loan-to-Income Ratio and Delinquency Rates are strong indicators of risk.
+- A High recall for defaults helps in identifying risky borrowers early, improving risk management.
+- Classifying borrowers based on their risk level helps lenders manage loans more safely and avoid bad debts
 
 ---
 
