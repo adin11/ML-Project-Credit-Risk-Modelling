@@ -37,37 +37,31 @@ A powerful, production-ready Credit Risk Scoring System built for financial inst
 
 ** **
 
-### 3. Fraud % Per City:
-![Loan Months](assets/city.png)
 
-
-** **
-
-
-### 4. Fraud % Per Loan Purpose:
+### 3. Fraud % Per Loan Purpose:
 ![Loan Months](assets/loan_purpose.png)
 
 
 ** **
 
 
-### 5. Relationship between credit utilization ratio and DPD affecting Default:
+### 4. Relationship between credit utilization ratio and DPD affecting Default:
 ![Loan Months](assets/credit_util.png)
 
 
 ** **
 
-### 6. Default % by residency type and employment status:
+### 5. Default % by residency type and employment status:
 ![Loan Months](assets/residency.png)
 
 
 ** **
 
-### 7. Roc, Auc Curve:
+### 6. Roc, Auc Curve:
 ![Roc auc curve](assets/roc.png)
 **False positive rate vs True positive rate, Area under the curve = 0.98**
 
-### 8. Feature Importances:
+### 7. Feature Importances:
 ![Feature Importance](assets/fc.png)
 **All the three ratios indicate as Important feature for the model**
 
