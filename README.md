@@ -66,16 +66,18 @@ A powerful, production-ready Credit Risk Scoring System built for financial inst
 ## 5. Default % by residency type and employment status:
 ![Loan Months](assets/residency.png)
 
-**Salaried professionals defaulted slightly more (9.1) as compared to self-employed professionals**
+
 **Individuals with rented residency tend to default more (16%).**
 **People who have mortgage on their homes contribute to 9.4 % default and professionals who own their homes have very less default rate 5.5 %.**
+**Salaried professionals defaulted slightly more (9.1) as compared to self-employed professionals**
 
 ## 6. Roc, Auc Curve:
 ![Roc auc curve](assets/roc.png)
-**False positive rate vs True positive rate, Area under the curve = 0.98**
 
 ## 7. Feature Importances:
 ![Feature Importance](assets/fc.png)
+
+**The most essential features affecting model performance are credit utilization ratio, loan to income ratio, delinquency ratio, avg days past due per delinquncy.
 
 --- 
 
