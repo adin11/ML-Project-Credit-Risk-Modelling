@@ -79,7 +79,7 @@ A powerful, production-ready Credit Risk Scoring System built for financial inst
 ## 7. Feature Importances:
 ![Feature Importance](assets/fc.png)
 
-**The most essential features affecting model performance are credit utilization ratio, loan to income ratio, delinquency ratio, avg days past due per delinquncy.
+**The most essential features affecting model performance are credit utilization ratio, loan to income ratio, delinquency ratio, avg days past due per delinquncy.**
 
 --- 
 
