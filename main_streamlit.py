@@ -2,7 +2,7 @@ import streamlit as st
 from prediction_helper import predict  # Ensure this is correctly linked to your prediction_helper.py
 
 # Set page configuration
-st.set_page_config(page_title="RiskRadar: Credit Risk Model", page_icon="📊")
+st.set_page_config(page_title="RiskRadar: Credit Risk Model", page_icon="💳")
 
 # App content
 st.title("💳 RiskRadar")
@@ -52,9 +52,7 @@ with row4[2]:
 # Button to calculate risk
 if st.button('Calculate Risk'):
     # Call the predict function from the helper module
-    # print((age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
-    #                                             delinquency_ratio, credit_utilization_ratio, num_open_accounts,
-    #                                             residence_type, loan_purpose, loan_type))
+    
     probability, credit_score, rating = predict(age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
                                                 delinquency_ratio, credit_utilization_ratio, num_open_accounts,
                                                 residence_type, loan_purpose, loan_type)
@@ -114,7 +112,7 @@ with st.sidebar:
         """
         This is a robust credit risk scoring system for financial institution, mimicking a CIBIL-like credit scorecard. The system classifies applicants into risk bands – Poor, Average, Good, and Excellent – empowering smarter lending decisions and minimizing default risk \n
         **Made by ~ Adin Raja**
-        """
+        """ 
     )
     st.markdown("### 📬 Contact") 
     st.write("""
