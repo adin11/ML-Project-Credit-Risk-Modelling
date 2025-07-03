@@ -11,11 +11,7 @@ Banner [source](https://banner.godori.dev/)
 # 💳 Credit Risk Modelling
 
 ##### App Link: [RiskRadar - Live Credit Scoring Engine](https://riskradar.onrender.com)
-##### Dashboard Link: [Power BI Dashboard](https://app.powerbi.onrender.com)
-
-
 ---
-
 ## 🔍 Business Problem:
 Money Lending instituitions often struggle to identify which applicants might default on loans. This leads to financial losses and operational risks. The goal is to build a solution that accurately classifies applicants based on their creditworthiness, making the loan approval process more efficient and secure.
 
@@ -23,6 +19,9 @@ Money Lending instituitions often struggle to identify which applicants might de
 
 ## Overview:
 A powerful, production-ready Credit Risk Scoring System built for financial institutions. Mimicking a CIBIL-like credit scorecard. It classifies applicants into different risk bands using financial and behavioral indicators. Designed to support smarter, faster lending decisions while reducing default risk, this real-time system is fair, scalable, and data-driven.
+---
+## Demo
+https://github.com/user-attachments/assets/4bb24da3-ff39-4984-b5cd-980bcc0c37d5
 
 ---
 
