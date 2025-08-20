@@ -30,30 +30,34 @@ https://github.com/user-attachments/assets/4bb24da3-ff39-4984-b5cd-980bcc0c37d5
 
 ### Data Preprocessing
 - Prevented data leakage by separating features (`X`) and target (`y`) early.
-- Applied identical pipelines to train/test sets independently.
+- Applied various transformation steps like outlier handling, imputing the missing values on both train and test sets.
 
 ### Exploratory Data Analysis
 - Used histograms and KDE plots to visualize key predictors.
 - Explored risk segments across demographics.
 
 ### Feature Engineering
-- Created meaningful features like `Loan-to-Income Ratio`, `Delinquency Ratios`, and `Avg Days Past Due`.
-- Applied domain expertise for better interpretability.
+- Created 3 meaningful features namely `Loan-to-Income Ratio`, `Delinquency Ratio`, and `Avg Days Past Due`.
 
 ### Feature Selection
-- Checked multicollinearity with VIF.
-- Evaluated categorical features using WoE & IV for business relevance.
+- For Numerical columns we used **Variance Inflation Factor** .
+- For Categorical features used **Weight of Evidence & Information value** for business relevance.
 
 ### 🤖 Model Development
 - Trained Logistic Regression, Random Forest, and XGBoost.
 - Used SMOTE-Tomek Links to balance default vs non-default classes.
+- Finalized logistic regression model with smote tomek links for handling class imbalance efficiently.
 
 ### 🛠️ Hyperparameter Tuning
-- Fine-tuned models using Optuna to reduce false negatives and improve recall.
+- Tried fine tuning using randomized search cv 
+- finalized and fine tuned the model using **optuna** library which uses an efficent approach rather than random combinations which randomized search cv uses.
+
 
 ---
 
 ## 📈 Evaluation Metrics
+- **Accuracy:**0.93 
+- **Recall on default class (1):** 0.94 
 - **ROC AUC:** 0.983  
 - **KS Statistic:** 85 (top 3 deciles)  
 - **Gini Coefficient:** High discriminatory power  
