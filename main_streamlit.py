@@ -51,8 +51,8 @@ with row4[2]:
 
 # Button to calculate risk
 if st.button('Calculate Risk'):
-    # Call the predict function from the helper module
     
+    # Call the predict function from the helper module
     probability, credit_score, rating = predict(age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
                                                 delinquency_ratio, credit_utilization_ratio, num_open_accounts,
                                                 residence_type, loan_purpose, loan_type)

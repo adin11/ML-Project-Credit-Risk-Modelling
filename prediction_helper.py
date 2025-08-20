@@ -60,25 +60,11 @@ def prepare_input(age, income, loan_amount, loan_tenure_months, avg_dpd_per_deli
     return df
 
 
-def predict(age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
-            delinquency_ratio, credit_utilization_ratio, num_open_accounts,
-            residence_type, loan_purpose, loan_type):
-    # Prepare input data
-    input_df = prepare_input(age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
-                             delinquency_ratio, credit_utilization_ratio, num_open_accounts, residence_type,
-                             loan_purpose, loan_type)
-
-    probability, credit_score, rating = calculate_credit_score(input_df)
-
-    return probability, credit_score, rating
-
-
 def calculate_credit_score(input_df, base_score=300, scale_length=600):
-    x = np.dot(input_df.values, model.coef_.T) + model.intercept_
+    x = np.dot(input_df.values, model.coef_.T) + model.intercept_  # y = mx+b
 
-    # Apply the logistic function to calculate the probability
+    # Apply the logistic function/sigmoid to calculate the probability
     default_probability = 1 / (1 + np.exp(-x))
-
     non_default_probability = 1 - default_probability
 
     # Convert the probability to a credit score, scaled to fit within 300 to 900
@@ -99,4 +85,21 @@ def calculate_credit_score(input_df, base_score=300, scale_length=600):
 
     rating = get_rating(credit_score[0])
 
-    return default_probability.flatten()[0], int(credit_score[0]), rating
+    return default_probability.flatten()[0], int(credit_score[0]), rating  # Will return the probability, credit score and rating
+
+
+
+def predict(age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
+            delinquency_ratio, credit_utilization_ratio, num_open_accounts,
+            residence_type, loan_purpose, loan_type):
+    
+    # Prepare input data
+    input_df = prepare_input(age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
+                             delinquency_ratio, credit_utilization_ratio, num_open_accounts, residence_type,
+                             loan_purpose, loan_type)
+
+    probability, credit_score, rating = calculate_credit_score(input_df)
+
+    return probability, credit_score, rating
+
+
