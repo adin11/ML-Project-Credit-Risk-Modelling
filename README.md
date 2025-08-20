@@ -59,9 +59,7 @@ https://github.com/user-attachments/assets/4bb24da3-ff39-4984-b5cd-980bcc0c37d5
 - **Accuracy:** 0.93 
 - **Recall on default class (1):** 0.94 
 - **ROC AUC:** 0.983  
-- **KS Statistic:** 85 (top 3 deciles)  
-- **Gini Coefficient:** High discriminatory power  
-- **Decile Analysis:** Effective risk segmentation
+- **KS Statistic:** 85 (top 3 deciles). Model is able to catch 85% of default cases in first 3 deciles itself.  
 
 ---
 
