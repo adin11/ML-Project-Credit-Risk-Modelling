@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/4bb24da3-ff39-4984-b5cd-980bcc0c37d5
 ---
 
 ## 📈 Evaluation Metrics
-- **Accuracy:**0.93 
+- **Accuracy:** 0.93 
 - **Recall on default class (1):** 0.94 
 - **ROC AUC:** 0.983  
 - **KS Statistic:** 85 (top 3 deciles)  
