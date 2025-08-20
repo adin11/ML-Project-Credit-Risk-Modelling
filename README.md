@@ -1,7 +1,7 @@
 ![banner](assets/banner.png)  
 
 # 💳 Risk Radar - Credit Risk Modelling
-##### App Link: [RiskRadar - Live Credit Scoring Engine](https://riskradar.onrender.com)
+### App Link: [RiskRadar - Live Credit Scoring Engine](https://riskradar.onrender.com)
 
 ---
 
